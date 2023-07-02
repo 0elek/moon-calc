@@ -2,6 +2,8 @@
 name = "moon-calc"
 version = "1.0.0"
 edition = "2021"
+repository = "https://github.com/0elek/moon-calc"
+description = "Moon phase calculator"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
