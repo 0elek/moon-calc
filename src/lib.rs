@@ -42,14 +42,14 @@ impl Moon {
         let lunation: u16 = lunation(julian_date);
         let distance: f64 = distance(phase, julian_date);
         
-        return Moon {
+        Moon {
             julian_date,
             age,
             phase,
             illumination,
             distance,
             lunation,
-        };
+        }
     }
     pub fn distance_km(&self) -> f64 {
         self.distance * EARTH_RADIUS_KM
@@ -66,7 +66,7 @@ impl Moon {
                 return phase.name;
             }
         }
-        return "Unknown";
+        "Unknown"
     }
     pub fn phase_emoji(&self, ) -> &'static str {
         for phase in PHASES.iter() {
@@ -74,7 +74,7 @@ impl Moon {
                 return phase.emoji;
             }
         }
-        return "Unknown";
+        "Unknown"
     }
     
 }
